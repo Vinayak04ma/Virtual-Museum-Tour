@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Ticket Booking</title>
+    <link rel="stylesheet" href="styletic.css">
+    <link rel="shortcut icon" href="museum (2).png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Museum Ticket Booking</h1>
+        <form id="ticketForm">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+
+            <input type="email" id="email" required>
+
+            <label for="ticketCount">Number of Tickets:</label>
+            <input type="number" id="ticketCount"
+            
+             min="1" max="10" required>
+
+
+            <label for="date">Visit Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit" id="sub">Book Ticket</button>
+        </form>
+        <div id="thankYouMessage" class="hidden">Thank you for booking! A confirmation email has been sent.</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script src="scriptic.js"></script>
+</body>
+</html>

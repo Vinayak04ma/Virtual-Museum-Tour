@@ -1,0 +1,285 @@
+body{
+    background-color: #004953;
+    overflow-x: hidden;
+    font-family: serif;
+}
+main{
+    width:100vw;
+    height:90vh;
+    background-color: aliceblue;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+main h1{
+  position: absolute;
+  top:25vh;
+  left:20vw;
+  word-spacing: 0%;
+    font-size: 5.4vw;
+    font-weight: 500;
+    z-index: 90;
+    width:60%;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+main h1::after{
+    content:"";
+    position: absolute;
+    width:35%;
+    height:16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    bottom:-5%;
+    left:50%;
+    transform:(-50%,0);
+
+}
+main #img1{
+    height:50vh;
+    width:20vw;
+    left:6%;
+    top:20%;
+    position:absolute;
+}
+main #img2{
+    height:40vh;
+    width:16vw;
+    right:27%;
+    top:14%;
+    position:absolute;
+}
+main #img3{
+    height:33vh;
+    width:15vw;
+    bottom:8%;
+    right:7%;
+    position:absolute;
+}
+main img:hover{
+    margin-top: -40px;
+}
+
+.time{
+    height:80vh;
+    width:80vw;
+    background-color: white;
+    margin-left:10vw;
+    display: flex;
+}
+.time div{
+    padding:5vw;
+}
+.time div h1{
+    color:rgb(235, 92, 15);
+    margin-bottom: 10px;
+}
+.time div p{
+    background-color: blanchedalmond;
+    padding:10px;
+    border-radius: 10px;
+}
+
+
+
+
+.maini{
+    width:78vw;
+    
+    margin-left: 11vw;
+   
+}
+.heros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+    margin:50px 0 50px 0;
+    background-color:white;
+    border-radius: 10px;
+    padding:50px;
+   
+    
+}
+.heros img{
+    height:300px;
+    width:300px;
+}
+.visitCone{
+    width:300px;
+}
+.visitCone h2{
+    font-size:2rem ;
+}
+.visitCone p{
+    color: rgb(235, 92, 15);
+}
+.visitCone button{
+    background-color: white;
+    margin:20px 0 20px 0;;
+    padding:10px;
+    border-color: rgb(235, 92, 15);
+    color:rgb(235, 92, 15);
+    font-size: 1rem;
+    
+}
+.visitCone button:hover{
+    background-color:rgb(235, 92, 15);
+    
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+   
+}
+.heros2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    gap:100px;
+    margin:30px 0 100px 0;
+    border-radius: 10px;
+    padding: 50px;
+    
+}
+.heros2 img{
+    border-radius: 50%;
+    overflow: hidden;
+    height:300px;
+    width:300px;
+}
+.heros2 .visitCone p{
+    margin-top: 20px;
+   
+}
+.supporte{
+    width:100vw;
+    position: relative;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(https://thumbs.dreamstime.com/z/pupils-teacher-school-field-trip-to-museum-guide-76293965.jpg);
+
+}
+.supporte:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url(https://thumbs.dreamstime.com/z/pupils-teacher-school-field-trip-to-museum-guide-76293965.jpg);
+
+}
+.supporte h1{
+    position: absolute;
+    width:35vw;
+    top:20vh;
+    left:35vw;
+    z-index:3;
+    color:white;
+}
+.supporte .button{
+    position: absolute;
+    width:35vw;
+    top:50vh;
+    left:35vw;
+    z-index:3;
+   
+}
+.supporte .button button{
+    padding:20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+}
+#btn1{
+    background-color: blueviolet;
+    color: white;
+}
+#btn2{
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+#btn1:hover{
+    background-color:black;
+    color:white;
+}
+#btn2:hover{
+    background-color:white;
+    color:black;
+}
+#particles-js{
+    width:100vw;
+    height: 90vh;
+}
+@media (max-width: 1000px){
+    .supporte .button{
+        top:60vh;
+        width:60vw;
+    }
+
+} 
+@media (max-width: 900px) {
+    .time{
+      width:100vw;
+      margin:0;
+    }
+
+}
+@media (max-width: 825px){
+    .supporte h1{
+        top:20vh;
+    }
+    .supporte .button{
+        top:75vh;
+        left:20vw;
+        
+    }
+
+}
+@media (max-width: 400px){
+    .supporte h1{
+        top:10vh;
+    }
+    .supporte .button{
+        top:80vh;
+        left:20vw;
+       
+        
+    }
+    .supporte .button button{
+        padding:5px;
+        font-size: 1rem;
+
+    }
+
+}
+@media (max-width: 630px){
+    .supporte h1{
+        top:10vh;
+    }
+    .supporte .button{
+        top:75vh;
+      
+        left:20vw;
+       
+        
+    }
+    .supporte .button button{
+        padding:5px;
+        font-size: 1rem;
+        margin:5px;
+
+    }
+
+}
+@media (max-width: 700px) {
+    .time{
+      display: flex;
+      flex-direction: column;
+      height:1100px;
+      }
+      .heros,.heros2{
+        display: flex;
+        flex-direction: column;
+      }
+    
+
+}
+
